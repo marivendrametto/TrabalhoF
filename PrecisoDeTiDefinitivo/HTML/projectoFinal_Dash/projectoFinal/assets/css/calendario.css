@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.schedule {
+    width: 90%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 12.5%;
+    /* Para dividir em 8 colunas (Hora + 7 dias) */
+}
+
+.schedule-table th {
+    background-color: #f8f9fa;
+}
+
+.schedule-table td {
+    height: 50px;
+    cursor: pointer;
+}
+
+.schedule-table td:hover {
+    background-color: #f0f0f0;
+}
+
+.time-cell {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+/* Estilos anteriores... */
+
+.schedule-table td.available {
+    background-color: #070707;
+    color: white;
+}
+
+.schedule-table td.unavailable {
+    background-color: #dc3545;
+    color: white;
+}
+
+.schedule-table td.editable:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+/* Estilos anteriores... */
+
+.save-hours {
+    background-color: #048867;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-hours:hover {
+    background-color: #048867;
+}
+
+.chosen-hours {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.chosen-hours-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.chosen-hours-list li {
+    background-color: #f8f9fa;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+}
+
+/* Gradiente entre as duas cores */
+.gradient-bg {
+    background: linear-gradient(90deg, #099EBD, #3C4858);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+/* Efeito ao passar o mouse nos botões */
+.gradient-bg:hover {
+    background: linear-gradient(90deg, #3C4858, #01cbf8);
+}
+
+/* Estilo dos botões de semana */
+.prev-week,
+.next-week {
+    background: linear-gradient(90deg, #01cbf8, #3C4858);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.prev-week:hover,
+.next-week:hover {
+    background: linear-gradient(90deg, #3C4858, #01cbf8);
+    /* Inverte as cores ao hover */
+}
+
+/* Estilo para a barra de dias da semana e horas */
+.schedule-table thead th {
+    background: linear-gradient(90deg, #099EBD, #3C4858);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid #fff;
+}
+
+.schedule-table .time-cell {
+    background: linear-gradient(90deg, #099EBD, #3C4858);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    border-right: 1px solid #fff;
+    font-weight: bold;
+}
+
+/* Centraliza e ajusta a barra da semana */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo da semana atual */
+.week-range {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 15px;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    /* Para permitir rolagem em dispositivos menores */
+}
+
+.schedule-table th,
+.schedule-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 12.5%;
+    min-width: 80px;
+    /* Define uma largura mínima para as células */
+}
+
+.time-cell {
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+
+.schedule-table td.editable {
+    transition: background-color 0.2s;
+    /* Suaviza a transição de cor */
+}
+
+.schedule-table td.editable.available {
+    background-color: rgb(153, 182, 89);
+    color: white;
+}

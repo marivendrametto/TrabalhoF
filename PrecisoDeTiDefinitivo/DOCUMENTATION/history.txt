@@ -1,0 +1,51 @@
+Version 1.2.0
+
+HTML
+	*.html (removed isotope script and changed Header Top)
+
+JS
+	vendor/bootstrap.js
+	vendor/isotope/*.* - removed
+
+CSS
+	css/bootstrap.min.css
+	css/fonts/font-awesome/*.*
+	css/theme.less
+	css/theme.css
+
+
+----------
+
+Version 1.1.1
+
+HTML
+	*.html - all files
+
+CSS
+	css/bootstrap.min.css
+
+JS
+	js/bootstrap.js
+
+
+----------
+
+
+Version 1.1.0
+
+HTML
+	*.html - all pages were changed (lorem ipsum)
+
+CSS
+	css/theme-elements.css
+	css/theme-elements.less
+	css/theme.less
+	css/theme.css
+
+
+----------
+
+
+Version 1.0.0
+
+    Initial template version.
